@@ -1,0 +1,704 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*****Estilo para o plugin slick*****/
+
+	.slick-dotted ul{
+		list-style-type: none;
+		text-align: center;
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.slick-dotted li{
+		display: inline-block;
+		margin: 0 7px;
+	}
+
+	.slick-dotted button:focus{
+		outline: 0;
+	}
+
+	.slick-dotted li button{
+		width: 16px;
+		height: 16px;
+		border-radius: 8px;
+		color: #d8d8d8;
+		border-width: 0;
+		background: #d8d8d8;
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	li.slick-active button{
+		background: #688293;
+		color: #688293;
+	}
+
+	.slick-slide:focus{outline: none;}
+
+/*****Fim do estilo para o slick*****/
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+html,body{
+	height: 100%;
+}
+
+
+/*Inicio da pagina*/
+
+header{
+	padding: 20px 2%;
+}
+
+header .logo img{
+	float: left;
+	width: 236px;
+}
+
+nav.menu-mobile{
+	display: none;
+	width: 28px;
+	height: 28px;
+	margin-top: 7px;
+	background-image: url('../imagens/menu-mobile.png');
+	background-size: 100% 100%;
+	float: right;
+	cursor: pointer;
+}
+
+nav.menu-mobile ul{
+	z-index: 999;/*exagerei para sempre ficar por cima de tudo*/
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	background-color: white;	
+}
+
+/*nav.menu-mobile ul li:hover{
+	background-color: #3c5b6f;
+}*/
+
+nav.menu-mobile ul li{
+	transition: 2s;
+	text-transform: uppercase;
+	/*border: 1px solid #ccc;*/
+}
+
+nav.menu-mobile ul li{
+	padding: 8px 0;
+}
+
+nav.menu-mobile ul li a{/*esse eu adicionei*/
+	font-size: 14px;
+	color: #ccc;
+}
+
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
+	padding: 8px 0;
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+	float: left;
+	font-size: 14px;
+	text-transform: uppercase;/*deixar tudo maiusculo*/
+	padding:0 50px;
+}
+
+header ul a{
+	color: #b4b4b4;
+	text-decoration: none;
+}
+/******/
+
+
+/* Sessão do mosaico de imagens */
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top: 100%;
+	background-color: #ccc;
+	border: 5px solid white;
+	/*
+	background-image: url();
+	*/
+}
+/*****/
+
+
+/*BOXs ABAIXO DO MOSAICO*/
+section.servicos > .container{
+	max-width: 800px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -30px;
+	text-align: center;
+}
+
+section.servicos > .container .box-servicos{
+	background-image: url('../imagens/icone_dente.png');
+	background-size: 18px 18px;
+	background-position: center calc(100% - 5px);
+	background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servicos h2{
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+section.servicos > .container .box-servicos p{
+	color: white;
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+section.servicos > .container .box-servicos:nth-of-type(1){
+	width: 30%;
+	padding: 50px 0;
+	background-color:#576975;
+}
+
+section.servicos > .container .box-servicos:nth-of-type(2){
+	width: 40%;
+	padding: 80px 0;
+	background-color:#688293;
+	background-image: none;
+}
+
+section.servicos > .container .box-servicos:nth-of-type(3){
+	width: 30%;
+	padding: 50px 0;
+	background-color:#576975;
+}
+/******/
+
+
+/*SESSÃO DO PERFIL*/
+section.perfil-container{
+	padding: 40px 0;
+}
+
+section.perfil-container .container{
+	max-width: 1000px;
+}
+
+section.perfil-container .perfil-wraper{
+	padding-top: 50%;
+	position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+section.perfil-container .img-perfil{
+	width: 40%;
+	height: 100%;
+	background-image: url('../imagens/img_perfil.png');
+	background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+	width: 60%;
+	padding: 0 30px; 
+}
+
+section.perfil-container .texto-perfil h2{
+	color: #698293;
+	font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+	color: rgb(190,190,190);
+	font-size: 15px;
+	line-height: 24px;
+	margin-top: 8px;
+}
+/*****/
+
+
+/*SESSAO COM OS 3 VIDEOS*/
+
+section.videos{
+	padding:50px 0;
+}
+
+section.videos .box-video{
+	float: left;
+	width: 33.3%;
+	position: relative;
+	border:5px solid white;
+	padding-top: calc(33.3% * 0.6);
+	/*background-color: green;*/
+}
+
+section.videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/*******/
+
+
+/*SESSÃO DOS TRATAMENTOS LOGO APOS OS VIDEOS*/
+
+section.tratamentos{
+	padding: 70px 0;
+}
+
+section.tratamentos .tratamento-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tratamentos > h2{
+	text-align: center;
+	font-size: 18px;
+	color: #698293;
+}
+
+section.tratamentos > .container{
+	padding: 80px 0;
+}
+
+.tratamento-single{
+	padding: 20px;
+}
+
+.tratamento-single h2{
+	font-size: 18px;
+	color: #737373;
+}
+
+.tratamento-single p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
+/*****/
+
+
+/*SESSÃO DEPOIMENTOS*/
+
+section.depoimentos > h2{
+	text-align: center;
+	font-size: 18px;
+	color: #698293;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+section.depoimentos .container{
+	padding: 40px 0;
+	max-width: 500px;/*era 400, mudei para 500*/
+}
+
+section.depoimentos .depoimento-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+.depoimento-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento{
+	padding: 20px 0;
+}
+
+.nome-depoimento span{
+	position: relative;
+	top: 4px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 8px;
+	color: #b4b4b4;
+	font-size: 13px;
+}
+
+.nome-depoimento img{
+	width: 40px;
+	height: 40px;
+	display: inline-block;/*coloquei porque slick tira da posição*/
+	border-radius: 20px;
+}
+/******/
+
+
+/*SESSÃO DO INSTAGRAM (PARTE 1)*/
+
+.instagram-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	background-color: #98a5ae;
+}
+
+.instagram-chamada p{
+	line-height: 23px;
+	color: white;
+	font-size: 13px;
+	padding: 10px 0;
+}
+
+/*SESSÃO DO INSTAGRAM (PARTE 2)*/
+.mosaico-social{
+	float: left;
+	width: 100%;
+}
+
+.img-mosaico-single-social{
+	float: left;
+	width: calc(100% / 9);
+	padding-top:calc(100% / 9);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #ccc;
+	border: 6px solid white;
+}
+
+/*SESSÃO DO INSTAGRAM (PARTE 3)*/
+.facebook-chamada{
+	float:left;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	background-color: #576975;
+}
+
+.facebook-chamada p{
+	line-height: 23px;
+	color: white;
+	font-size: 13px;
+	padding: 10px 0;
+}
+/*********/
+
+
+/*SESSÃO DO FORMULÁRIO*/
+
+section.contato{
+	background-color: rgb(240,240,240);
+	padding: 60px 2%;
+}
+
+section.contato > h2{
+	text-align: center;
+	font-size: 18px;
+	color: #698293;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+section.contato form{
+	width: 100%;
+	max-width: 400px;
+	margin:30px auto;
+}
+
+.form-wraper{
+	float: left;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #dadada;
+	margin-top: 8px; 
+}
+
+.form-wraper textarea{
+	width: 100%;
+	margin-top: 8px;
+	height: 121px;
+	padding: 8px;
+	resize: none;/*serve para desabilitar a posibilidade de modificar o tamanho la na pagina*/
+	border:1px solid #dadada;
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	height:35px;
+	margin-top: 10px;
+	background-color: #688293;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	text-transform: uppercase;
+	border:0;
+	display: inline-block;
+	/*
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	*/
+}
+/**********/
+
+
+/***RODAPÉ***/
+
+footer{
+	padding: 40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1000px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	font-weight: normal;
+	color: white;
+	font-size: 18px;
+}
+
+.footer-block p{
+	color: white;
+	font-size: 14px;
+	margin-top: 9px;
+}
+
+/*******/
+
+
+/*SESSÃO FINAL*/
+
+section.footer-final{
+	background-color: #576975;
+	text-align: center;
+	padding: 19px 0;
+}
+
+/*.footer-final a{   PODE SER ASSIM TAMBEM COM O MEU NOME AO INVÉS DO DANKI
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+}*/
+
+/*********/
+
+
+
+@media screen and (max-width: 1024px){
+	/*MENU INICIO DA PAGINA*/
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	/*SESSÃO DO INSTAGRAM (PARTE 2)*/
+	.img-mosaico-single-social{
+		width: calc(100% / 6);
+		padding-top:calc(100% / 6) ;
+	}
+
+	.mosaico-social > div:nth-of-type(1n+7){
+		display: none;
+	}
+	/*********/
+}
+
+@media screen and (max-width: 850px){
+	/*SESSÃO DO PERFIL COM TEXTO*/
+	section.perfil-container .perfil-wraper{
+		padding-top: 0;
+	}
+
+	section.perfil-container .perfil-wraper2{
+		/*position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;*/
+		position: static;
+		height: auto;
+		text-align: center;
+		display: inline-block;
+		/*flex-direction: column;*/
+	}
+
+	section.perfil-container .img-perfil{
+		width: 50%;
+		padding-top: 70%;
+		display: inline-block;
+		height:auto;
+		/*background-image: url('../imagens/img_perfil.png');
+		background-size: 100% 100%;*/
+	}
+
+	section.perfil-container .texto-perfil{
+		width: 100%;
+		text-align: justify;
+		display: inline-block;
+		padding: 80px 30px 30px 30px; 
+	}
+	/******/
+}
+
+@media screen and (max-width: 768px){
+	
+
+
+	/*BOXs EMBAIXO DO MOSAICO*/
+	section.servicos > .container{
+		/*max-width: 800px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		top: -30px;
+		text-align: center;*/
+		flex-direction: column;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(1){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 0;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(2){
+		width: 94%;
+		max-width: 380px;
+		padding: 40px 0;
+	}
+
+	section.servicos > .container .box-servicos:nth-of-type(3){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 0;
+	}
+	/******/
+
+ 
+	/*SESSAO DOS VIDEOS*/
+	section.videos{
+		text-align: center;
+	}
+
+	section.videos .box-video{
+		float: none;
+		width: 70%;
+		margin-top: 30px;
+		display: inline-block;
+		/*border:5px solid white;*/
+		padding-top: calc(70% * 0.6);
+		/*background-color: green;*/
+	}
+	/*******/
+
+	/*SESSÃO DO INSTAGRAM (PARTE 2)*/
+	.img-mosaico-single-social{
+		width: calc(100% / 3);
+		padding-top:calc(100% / 3) ;
+	}
+
+	.mosaico-social > div:nth-of-type(1n+4){
+		display: none;
+	}
+	/*******/
+
+	/*RODAPÉ*/
+	footer{
+		text-align: center;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		margin: 30px 0;
+	}	
+
+
+}
+
+@media screen and (max-width: 580px){
+	/*SESSÃO DO PERFIL COM TEXTO*/
+	section.perfil-container .img-perfil{
+		width: 80%;
+		padding-top: 110%;
+	}
+	/******/
+
+	/*SESSAO DOS VIDEOS*/
+	section.videos .box-video{
+		width: 100%;
+		/*border:5px solid white;*/
+		padding-top: calc(100% * 0.6);
+		/*background-color: green;*/
+	}
+	/*******/
+
+	.w50{
+		width: 100%;
+	}
+}
