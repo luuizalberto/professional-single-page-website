@@ -142,7 +142,7 @@ header ul a{
 
 .img-mosaico-single{
 	width: 100%;
-	
+	/* padding-top: 100%; */
 	background-color: #ccc;
 	border: 5px solid white;
 	/*
