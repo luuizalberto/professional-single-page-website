@@ -1,5 +1,5 @@
 # web-design-express
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/luuizalberto/web-design-express/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/luuizalberto/professional-single-page-website/blob/main/LICENSE)
 
 # Sobre o Projeto
 Projeto de um site institucional para uma dentista, utilizando o JavaScript para fazer o mosaico e o efeito de rolagem suave do menu.
