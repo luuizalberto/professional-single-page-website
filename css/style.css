@@ -64,9 +64,17 @@ header{
 	padding: 20px 2%;
 }
 
-header .logo img{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+header .logo span{
 	float: left;
 	width: 236px;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 6px;
+	font-weight: bold;
+	color: #98a5ae;
+	margin-left: 8px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 nav.menu-mobile{
@@ -545,6 +553,9 @@ section.footer-final{
 
 
 @media screen and (max-width: 1024px){
+	header .logo span{
+		margin-top: 10px;
+	}
 	/*MENU INICIO DA PAGINA*/
 	nav.menu-desktop{
 		display: none;
