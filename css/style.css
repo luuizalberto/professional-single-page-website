@@ -110,13 +110,15 @@ nav.menu-mobile ul li{
 }
 
 nav.menu-mobile ul li{
-	padding: 8px 0;
+	padding: 15px 0;
 }
 
 nav.menu-mobile ul li a{/*esse eu adicionei*/
 	font-size: 14px;
-	color: #ccc;
+	color:#98a5ae;
 }
+
+nav.menu-mobile ul li a:hover{color: #576975;}
 
 header nav.menu-desktop{
 	float: right;
@@ -132,11 +134,17 @@ header nav.menu-desktop ul li{
 	font-size: 14px;
 	text-transform: uppercase;/*deixar tudo maiusculo*/
 	padding:0 50px;
+	transition: 0.4s;
 }
+
+header nav.menu-desktop ul li:hover{transform: scale(1.04);}
 
 header ul a{
 	color: #b4b4b4;
 	text-decoration: none;
+}
+header ul a:hover{
+	color: #576975;
 }
 /******/
 
