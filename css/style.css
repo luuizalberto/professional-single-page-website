@@ -3,6 +3,7 @@
 	padding:0;
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
+	outline: none;
 }
 
 /*****Estilo para o plugin slick*****/
@@ -501,11 +502,24 @@ section.contato form{
 	text-transform: uppercase;
 	border:0;
 	display: inline-block;
+	transition: 0.5s;
 	/*
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	*/
+}
+
+.form-wraper input[type=text], .form-wraper input[type=submit], .form-wraper textarea{
+	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.20);
+}
+
+.form-wraper input[type=text]:focus, .form-wraper textarea:focus{
+	transform: scale(1.01);
+}
+
+.form-wraper input[type=submit]:hover{
+	transform: scale(1.05);
 }
 /**********/
 
